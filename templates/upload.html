@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+  <title>Tattoo's images classifier</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>About this classifier </h1> 
+    <p "font-size:100px;">THIS IS A CLASSIFIER WHICH I BUILT AS PART OF A PROOF OF CONCEPT FOR THE POLICE OFFICE IN TLAXCALA, MEXICO. THE OBJECTIVE IS TO CLASSIFY TATTOO IMAGES INTO THREE TYPES OF IMAGES: WOMEN, SKULLS AND MONSTERS.  I TRAINED THIS MODEL USING 300 TATTOO IMAGES: 100 IMAGES CORRESPONDING TO SKULLS, 100 HUNDRED IMAGES CORRESPONDING TO WOMEN AND 100 IMAGES CORRESPONDING TO MONSTERS. I SPLIT INTO 70% FOR TRAINING AND 30% FOR TESTING</P>
+    <h1>About the neural network used </h1> 
+	<P "font-size:100px;">THIS CLASSIFIER IS BASED ON A MULTILAYER PERCEPTRON NEURAL NETWORK BUILT IN TENSORFLOW. IT HAS ONE HIDDEN LAYER WITH 100 NEURONS. THE ACCURACY SCORE ON THE TESTING IS 45%. THIS WAS THE HIGHEST SCORE USING ONLY 1 HIDDEN LAYER IN A 2 WEEK PERIOD.</p>
+	<h1>Final comments </h1>
+    <P "font-size:100px;">TO SEE HOW IT WORKS, SIMPLY UPLOAD AN IMAGE AND CLICK THE BUTTON. THEN WAIT A FEW SECONDS. IT WILL DISPLAY THE PREDICTED CLASSIFICATION</P>
+	<P "font-size:100px;">PLEASE NOTE THAT THIS IS JUST A PROOF OF CONCEPT! I WORKED ON THIS PROOF OF CONCEPT FOR AROUND 2-3 WEEKS AND SPENT MOST OF MY LEARNING LEARNING HOW TO BUILD A SIMPLE NEURAL NETWORK WITH TENSORFLOW RATHER THAN TRYING TO IMPROVE THE ACCURACY.</P>
+    <form action="/uploader" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" />
+      <input type="submit" value="Upload"/>
+    </form>
+  </div>    
+</div>
+
+</body>
+</html>
