@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+  <title>Tattoo's images classifier</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>About this classifier </h1> 
+    <p "font-size:100px;">THIS IS A CLASSIFIER WHICH I BUILT AS PART OF A PROOF OF CONCEPT FOR THE POLICE OFFICE IN TLAXCALA, MEXICO. </p>
+	
+	<p>THE OBJECTIVE IS TO CLASSIFY TATTOO IMAGES INTO THREE TYPES OF IMAGES: WOMEN, SKULLS AND MONSTERS.  I TRAINED THIS MODEL USING 300 TATTOO IMAGES: 100 IMAGES CORRESPONDING TO SKULLS, 100 CORRESPONDING TO WOMEN AND 100 CORRESPONDING TO MONSTERS. I SPLIT THEM INTO 70% FOR TRAINING AND 30% FOR TESTING</P>
+    <h1>About the neural network used </h1> 
+	<P "font-size:100px;">THIS CLASSIFIER IS BASED ON A MULTILAYER PERCEPTRON NEURAL NETWORK WHICH I BUILT USING TENSORFLOW. IT HAS ONLY ONE HIDDEN LAYER WITH 1000 NEURONS, THE LEARNING RATE IS EQUAL TO 0.01 AND I SET 1000 EPOCHS. THE ACCURACY SCORE ON THE TESTING IS 45%. THIS WAS THE HIGHEST SCORE USING 1 HIDDEN LAYER AND MANUAL GRID SEARCH.</p>
+    <P> THE SOURCE CODE IS AVAILABLE HERE: <A HREF="https://github.com/antonioACR1/classifier/blob/master/classifier.ipynb">https://github.com/antonioACR1/classifier/blob/master/classifier.ipynb</A> </P>
+	<h1>Final comments </h1>
+    <P "font-size:100px;">TO SEE HOW IT WORKS, SIMPLY UPLOAD AN IMAGE AND CLICK THE BUTTON. THEN WAIT A FEW SECONDS. IT WILL DISPLAY THE PREDICTED CLASSIFICATION: 'MUJER' (WOMAN), 'MONSTRUO' (MONSTER) OR 'CALAVERA' (SKULL). NOTE HOWEVER THAT IT MIGHT SHOW AN ERROR DEPENDING ON THE FILE YOU'RE TRYING TO UPLOAD.</P>
+	<P "font-size:100px;">PLEASE NOTE THAT THIS IS JUST A PROOF OF CONCEPT! I WORKED ON THIS PROOF OF CONCEPT FOR A COUPLE OF WEEKS AND I SPENT MOST OF MY TIME LEARNING LEARNING HOW TO BUILD A SIMPLE NEURAL NETWORK WITH TENSORFLOW RATHER THAN TRYING TO IMPROVE THE ACCURACY.</P>
+    <form action="/uploader" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file" />
+      <input type="submit" value="Upload"/>
+    </form>
+  </div>    
+</div>
+
+</body>
+</html>
